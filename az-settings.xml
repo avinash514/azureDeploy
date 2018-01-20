@@ -4,16 +4,22 @@
     <profile>
         <id>azure</id>
         <properties>
-            <azureFtpUrl>WEBAPP_FTP_URL</azureFtpUrl>
+            <azureFtpUrl>ftp://waws-prod-bay-063.ftp.azurewebsites.windows.net/site/wwwroot</azureFtpUrl>
         </properties>
     </profile>
 </profiles>
 <servers>
     <server>
-        <id>azure-hello-world</id>
-        <username>WEBAPP_USERNAME</username>
-        <password>WEBAPP_PASSWORD</password>
+        <id>petclinic</id>
+        <username>petclinicDocker\avinash514</username>
+        <password>FE7k1KuktRaf5uvdHhEZCbQSk8axhPSTRcsKQ8jofkDAjDhdmqXA33Zts4gK</password>
     </server>
+    <configuration>
+     <fromFile>${basedir}/target/petclinic.war</fromFile>
+     <url>ftp://waws-prod-bay-063.ftp.azurewebsites.windows.net/site/wwwroot</url>
+     <toFile>webapps/ROOT.war</toFile>
+     <serverId>petclinic</serverId>
+   </configuration>
 </servers>
 <activeProfiles>
     <activeProfile>azure</activeProfile>
