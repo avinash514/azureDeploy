@@ -15,7 +15,7 @@
         <password>FE7k1KuktRaf5uvdHhEZCbQSk8axhPSTRcsKQ8jofkDAjDhdmqXA33Zts4gK</password>
     </server>
     <configuration>
-     <fromFile>${basedir}/target/petclinic.war</fromFile>
+     <fromFile>${basedir}/target/AzureAppDemo-0.0.1-SNAPSHOT.war</fromFile>
      <url>ftp://waws-prod-bay-063.ftp.azurewebsites.windows.net/site/wwwroot</url>
      <toFile>webapps/ROOT.war</toFile>
      <serverId>petclinic</serverId>
