@@ -50,7 +50,7 @@
                     <configuration>
                         <fileset>
                             <sourceId>azure-hello-world</sourceId>
-                            <source>${azureFtpUrl}/webapps</source>
+                            <source>${azureFtpUrl}/site/wwwroot</source>
                         </fileset>
                     </configuration>
                 </execution>
