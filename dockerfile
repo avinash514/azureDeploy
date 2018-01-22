@@ -5,4 +5,4 @@ From tomcat:8-jre8
 MAINTAINER "Avinash Dimmeta">
 
 # Copy to images tomcat path
-ADD ./target/calculator.war /usr/local/tomcat/webapps/
+ADD ./target/app.war /usr/local/tomcat/webapps/
